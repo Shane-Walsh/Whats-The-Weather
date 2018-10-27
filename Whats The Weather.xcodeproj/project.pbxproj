@@ -22,6 +22,7 @@
 		B20B95D82184EF3200BFA72C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20B95DB2184EF3200BFA72C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B20B95DD2184EF3200BFA72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20B95E32184F25100BFA72C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		B20B95C52184EF3200BFA72C = {
 			isa = PBXGroup;
 			children = (
+				B20B95E32184F25100BFA72C /* README.md */,
 				B20B95D02184EF3200BFA72C /* Whats The Weather */,
 				B20B95CF2184EF3200BFA72C /* Products */,
 			);
