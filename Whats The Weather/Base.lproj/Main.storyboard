@@ -17,23 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jZv-L8-nTa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jZv-L8-nTa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgA-E9-aAK">
-                                <rect key="frame" x="49" y="54" width="277.5" height="36"/>
+                                <rect key="frame" x="49" y="54" width="277" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="2Ja-Fi-mK5"/>
                                     <constraint firstAttribute="width" constant="277.5" id="RAb-Xy-Bbc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <color key="textColor" red="0.98961431865250549" green="1" blue="0.95058120261031465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.98114007711410522" green="0.67939255193723835" blue="0.34314435070351745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter city name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dor-Kj-j9F">
                                 <rect key="frame" x="117.5" y="130" width="140" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.29652619361877441" green="0.59505552053451538" blue="0.98114007711410522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. Berlin, San Francisco " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYq-G7-sT1">
@@ -42,15 +44,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0S-Nn-d6Q">
+                                <rect key="frame" x="16" y="291" width="343" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="NY4-Bf-NiH"/>
+                                    <constraint firstAttribute="width" constant="343" id="gMG-Nb-pAA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxe-Y6-7dV">
+                                <rect key="frame" x="163" y="221" width="49" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKl-Bd-U9v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Hxe-Y6-7dV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="06A-PM-PHp"/>
+                            <constraint firstItem="N0S-Nn-d6Q" firstAttribute="top" secondItem="Hxe-Y6-7dV" secondAttribute="bottom" constant="40" id="24U-R0-ZWc"/>
+                            <constraint firstItem="N0S-Nn-d6Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6IN-Kq-Iud"/>
                             <constraint firstItem="hYq-G7-sT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AZz-A2-k8g"/>
                             <constraint firstItem="QgA-E9-aAK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="BVf-rA-y7X"/>
                             <constraint firstItem="Dor-Kj-j9F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FYR-WA-c6M"/>
                             <constraint firstItem="jZv-L8-nTa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LNv-AS-BUn"/>
                             <constraint firstItem="jZv-L8-nTa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ow4-5X-00Q"/>
                             <constraint firstItem="jZv-L8-nTa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q4h-1b-VWQ"/>
+                            <constraint firstItem="Hxe-Y6-7dV" firstAttribute="top" secondItem="hYq-G7-sT1" secondAttribute="bottom" constant="16" id="Vkx-EC-h7H"/>
                             <constraint firstItem="jZv-L8-nTa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b9Q-NQ-vd2"/>
                             <constraint firstItem="hYq-G7-sT1" firstAttribute="top" secondItem="Dor-Kj-j9F" secondAttribute="bottom" constant="21" id="dfS-Fs-F8U"/>
                             <constraint firstItem="Dor-Kj-j9F" firstAttribute="top" secondItem="QgA-E9-aAK" secondAttribute="bottom" constant="40" id="wIE-iR-zZy"/>
@@ -59,6 +83,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="hYq-G7-sT1" id="wzj-Qs-Vkb"/>
+                        <outlet property="resultLabel" destination="N0S-Nn-d6Q" id="K9e-de-Olo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
