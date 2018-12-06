@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //set status bar white
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     @IBOutlet var cityTextField: UITextField!
     
@@ -96,8 +100,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
-        
+        self.hideKeyboard()
     }
     
     override func didReceiveMemoryWarning() {
@@ -105,6 +108,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+}
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
     
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
 }
 
