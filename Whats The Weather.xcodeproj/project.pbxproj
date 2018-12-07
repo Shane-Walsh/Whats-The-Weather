@@ -39,6 +39,7 @@
 		B20B95C52184EF3200BFA72C = {
 			isa = PBXGroup;
 			children = (
+				B2F8625921BAD29800AAACCE /* Screenshots */,
 				B20B95E32184F25100BFA72C /* README.md */,
 				B20B95D02184EF3200BFA72C /* Whats The Weather */,
 				B20B95CF2184EF3200BFA72C /* Products */,
@@ -56,14 +57,53 @@
 		B20B95D02184EF3200BFA72C /* Whats The Weather */ = {
 			isa = PBXGroup;
 			children = (
-				B20B95D12184EF3200BFA72C /* AppDelegate.swift */,
-				B20B95D32184EF3200BFA72C /* ViewController.swift */,
-				B20B95D52184EF3200BFA72C /* Main.storyboard */,
-				B20B95D82184EF3200BFA72C /* Assets.xcassets */,
-				B20B95DA2184EF3200BFA72C /* LaunchScreen.storyboard */,
+				B2F8625821BACFB700AAACCE /* SupportFiles */,
+				B2F8625721BACF5400AAACCE /* Resources */,
+				B2F8625621BACF3000AAACCE /* Views */,
+				B2F8625521BACF0700AAACCE /* Controllers */,
 				B20B95DD2184EF3200BFA72C /* Info.plist */,
 			);
 			path = "Whats The Weather";
+			sourceTree = "<group>";
+		};
+		B2F8625521BACF0700AAACCE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B20B95D32184EF3200BFA72C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B2F8625621BACF3000AAACCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B20B95D52184EF3200BFA72C /* Main.storyboard */,
+				B20B95DA2184EF3200BFA72C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2F8625721BACF5400AAACCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B20B95D82184EF3200BFA72C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2F8625821BACFB700AAACCE /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B20B95D12184EF3200BFA72C /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		B2F8625921BAD29800AAACCE /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
