@@ -1,8 +1,14 @@
 #  City Weather
 
-User can find out up-to-date local weather conditions from around the globe by simply entering a city name.
+User can find out up-to-date local weather conditions from around the globe by simply entering a city name :sunny:
 
-##Technology - Mobile 
+##Technology
 
-- Swift 4 for iOS
+- iOS app developed using Swift 4
+
+![Launch Screen](https://github.com/Shane-Walsh/Whats-The-Weather/blob/master/Screenshots/launchscreen.png)
+
+![Main Screen](https://github.com/Shane-Walsh/Whats-The-Weather/blob/master/Screenshots/mainscreen.png)
+
+
 
